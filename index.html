@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kazibwe Francis - Portfolio</title>
-    <!-- Link to Font Awesome for icons -->
+    <title>Kazibwe Francis - Software Engineer Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="hero-section">
         <div class="header-content">
             <h1>Kazibwe Francis</h1>
-            <p>Software Engineer | Mobile and Web Developer</p>
+            <p class="tagline">Mobile Developer (Flutter) | Back-end (PHP/Laravel/C#) Developer | Digital Innovator</p>
         </div>
     </header>
 
@@ -23,182 +23,353 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li> <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <p>
-                    Hi! I'm Kazibwe Francis, a passionate software engineer currently interning at DevelopersHub Corporation. 
-                    I'm also the Secretary of the Makerere Tech Society and proudly serve as the Class Representative for Year 2 Software Engineering at Makerere University. 
-                    With a deep love for technology and problem-solving, I thrive on developing innovative solutions that make an impact.
-                </p>
-    
-                <p>
-                    Right now, I'm working on <strong>FarmEase</strong>, a powerful and intuitive cow management application built with Flutter. 
-                    Designed for modern farmers, this app simplifies cattle tracking, milk production monitoring, and feed management. 
-                    With features like QR code scanning, AI-powered feed recommendations, and document management, FarmEase is transforming herd management for <strong>Ndejje University</strong>, helping farmers maintain accurate records and optimize productivity.
-                </p>
-    
-                <p>
-                    My journey into tech started at a young age, fueled by curiosity and a desire to build real-world solutions. 
-                    Over time, I have honed my expertise in a diverse range of programming languages and frameworks, including:
-                </p>
-    
-                <ul>
-                    <li><strong>Dart & Flutter:</strong> My go-to stack for building cross-platform mobile applications.</li>
-                    <li><strong>Firebase:</strong> Integrating real-time databases, authentication, and cloud functions to power scalable apps.</li>
-                    <li><strong>PHP & Laravel:</strong> Developing robust, scalable web applications with seamless backend integrations.</li>
-                </ul>
-    
-                <p>
-                    Beyond coding, I enjoy collaborating with fellow developers, contributing to open-source projects, and participating in hackathons. 
-                    I'm always eager to explore new technologies, refine my problem-solving skills, and push the boundaries of what's possible in software development.
-                </p>
-    
-                <p>
-                    In my free time, you'll find me reading tech blogs, watching programming tutorials, and experimenting with the latest development tools. 
-                    I'm particularly fascinated by data science and machine learning, and I’m always looking for ways to integrate AI into my projects.
-                </p>
-    
-                <p>
-                    Feel free to connect with me—whether it's for tech discussions, collaborations, or just sharing ideas. 
-                    I'm always open to new opportunities and exciting challenges!
-                </p>
+    <main>
+        <section id="about" class="section-padding">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>
+                        Hi! I'm Kazibwe Francis, a creative and solutions-driven Mobile Developer and Back-end Engineer  with hands-on expertise in Flutter, Dart, Firebase, PHP, Laravel, and C# (.NET Core framework). I'm passionate about integrating AI, Machine Learning, FinTech, and IoT to build high-performance, user-centric applications. I'm adept at agile methodologies, cross-functional collaboration, and delivering scalable digital solutions that drive transformation.
+                    </p>
+                    <p>
+                        My objective is to secure a challenging role where I can leverage and expand my expertise in mobile (Flutter/Dart/Firebase) and back-end (PHP/Laravel) development, incorporating emerging technologies (AI, IoT, FinTech) to deliver impactful, innovative software solutions.
+                    </p>
+                    <p>
+                        Beyond coding, I actively contribute to the tech community as the Secretary of the Makerere Tech Society and serve as the Class Representative for Year 2 Software Engineering at Makerere University. I thrive on tackling complex problems and building impactful applications.
+                    </p>
+                    <p>
+                        Let's connect! I'm always open to discussing tech, exploring collaborations, or simply sharing ideas. Feel free to reach out for new opportunities and exciting challenges.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
-    
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <i class="fab fa-html5"></i>
-                <p>HTML</p>
-            </div>
-            <div class="skill">
-                <i class="fab fa-css3-alt"></i>
-                <p>CSS</p>
-            </div>
-            <div class="skill">
-                <i class="fab fa-js"></i>
-                <p>JavaScript</p>
-            </div>
-            <div class="skill">
-                <i class="fab fa-php"></i>
-                <p>PHP</p>
-            </div>
-            <div class="skill">
-                <i class="fab fa-laravel"></i>
-                <p>Laravel</p>
-            </div>
-            <style>
-                .skill {
-                  display: inline-block;
-                  margin: 10px;
-                }
-                
-                .skill-icon {
-                  width: 50px;
-                  height: 50px;
-                }
-                .project a {
-                    display: inline-block;
-                    padding: 8px 15px;
-                    background-color: #007bff;
-                    color: #fff;
-                    text-decoration: none;
-                    border-radius: 4px;
-                    transition: background-color 0.3s;
-                }
-                
-                .project a:hover {
-                    background-color: #0056b3;
-                }
-              </style>
-              
-              <div class="skill">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Dart_programming_language_logo_icon.svg" alt="Dart" class="skill-icon" />
-                <p>Dart</p>
-            </div>
-            
-              
-            <div class="skill">
-                <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="Flutter" class="skill-icon" />
-                 <p>Flutter</p>    
+        <section id="skills" class="section-padding bg-light">
+            <div class="container">
+                <h2>My Core Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
+                        <div class="skill-items-group">
+                            <div class="skill-item">
+                                <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="Flutter" class="skill-icon" />
+                                <p>Flutter</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="Dart" class="skill-icon" />
+                                <p>Dart</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-fire skill-icon"></i>
+                                <p>Firebase</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-cubes skill-icon"></i>
+                                <p>State Management (Provider, BLOC, GetX)</p>
+                            </div>
                         </div>
-            
-        </div>
-    </section>
+                    </div>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>My AI Nanny - Flutter Project</h3>
-                <p>A Flutter-based application designed to assist mothers monitor their babies through AI-enhanced wrist watches.</p>
-                <a href="https://github.com/kazibwefrancis/AINanny.git" target="_blank">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Totebags&More e-commerce site</h3>
-                <p>A fully functional online store developed using Laravel, integrating payment gateways and user-friendly interfaces.</p>
-                <a href="https://github.com/kazibwefrancis/Totebags.website" target="_blank">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Farm Ease - Cow Management Application</h3>
-                <p>A powerful and intuitive cow management application built with Flutter. Designed for modern farmers, this app simplifies cattle tracking, milk production monitoring, and feed management.</p>
-                <a href="https://github.com/kazibwefrancis/FarmEase" target="_blank">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Gemnet - User Management System</h3>
-                <p>A robust and user-friendly User Management System built using plain PHP and MySQL. This system provides essential user authentication and profile management functionalities while ensuring security best practices.</p>
-                <a href="https://github.com/kazibwefrancis/Gemnet---Basic-User-Management-System" target="_blank">View Project</a>
-            </div>
-        </div>
-    </section>
-    
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-content">
-                <p><strong>Primary Education:</strong> Riverside Academy</p>
-                <p><strong>High School:</strong> Viva College School</p>
-                <p><strong>University:</strong> Makerere University - BSc Software Engineering</p>
-            </div>
-            <a href="https://docs.google.com/document/d/18Zlanvh6-LZ8syt_f1RTtuWi4hBQAP44/edit?usp=drive_link&ouid=115835080080740746446&rtpof=true&sd=true" target="_blank" class="btn">View my CV</a>
-        </div>
-    </section>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-server"></i> Back-end Development</h3>
+                        <div class="skill-items-group">
+                            <div class="skill-item">
+                                <i class="fab fa-php skill-icon"></i>
+                                <p>PHP</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-laravel skill-icon"></i>
+                                <p>Laravel</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code skill-icon"></i>
+                                <p>C# (.NET Core)</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code-branch skill-icon"></i>
+                                <p>RESTful API Design</p>
+                            </div>
+                        </div>
+                    </div>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form action="https://formspree.io/f/xvgpnqjd" method="POST">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+                        <div class="skill-items-group">
+                            <div class="skill-item">
+                                <i class="fab fa-html5 skill-icon"></i>
+                                <p>HTML</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt skill-icon"></i>
+                                <p>CSS</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js skill-icon"></i>
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-react skill-icon"></i>
+                                <p>React</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> Databases</h3>
+                        <div class="skill-items-group">
+                            <div class="skill-item">
+                                <i class="fas fa-database skill-icon"></i>
+                                <p>MySQL</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-fire skill-icon"></i>
+                                <p>Firebase Firestore</p>
+                            </div>
+                             <div class="skill-item">
+                                <img src="https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg" alt="Supabase" class="skill-icon" />
+                                <p>Supabase</p>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                        <div class="skill-items-group">
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt skill-icon"></i>
+                                <p>Git / GitHub</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-cogs skill-icon"></i>
+                                <p>Third-Party APIs</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-wifi skill-icon"></i>
+                                <p>IoT Sensors</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma" class="skill-icon" />
+                                <p>Figma</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-robot skill-icon"></i>
+                                <p>AI/ML Concepts</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-sitemap skill-icon"></i>
+                                <p>Agile Methodologies</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="_replyto" required>
+            </div>
+        </section>
+
+        <section id="experience" class="section-padding">
+            <div class="container">
+                <h2>Work Experience</h2>
+                <div class="experience-timeline">
+                    <div class="experience-item">
+                        <h3>Software Engineering Intern <span class="employer">NSSF Uganda</span></h3>
+                        <p class="duration">June 2025 – August 2025</p>
+                        <ul>
+                            <li>Developed a service helpdesk system in Laravel to replace an existing vendor platform, with multi-user views and integrated with the existing authentication system.</li>
+                            <li>Built a .NET (C#) backend to aggregate data from two legacy system APIs, delivering centralized analytics to a unified frontend.</li>
+                            <li>Collaborated with system administrators and internal IT teams to ensure seamless integration and deployment.</li>
+                        </ul>
+                    </div>
+                     <div class="experience-item">
+                        <h3>Full Stack Developer Intern <span class="employer">Crest AI</span></h3>
+                        <p class="duration">May 2025 – July 2025</p>
+                        <ul>
+                            <li>Contributed to mobile development using Flutter, focusing on JWT-based authentication and refined UI/UX design.</li>
+                            <li>Built FastAPI endpoints for multilingual and live speech translation modules.</li>
+                            <li>Developed an automatic speech recognition engine using Whisper and Sunbird AI models.</li>
+                            <li>Worked across multiple teams as a full stack developer, contributing to both front-end features and back-end services.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Web Application Developer (Contract) <span class="employer">Uganda Civil Aviation Authority | NAJOD Technologies</span></h3>
+                        <p class="duration">March 2025 – June 2025</p>
+                        <ul>
+                            <li>Developed a survey web application using Laravel, implementing modular controllers and services for maintainable code.</li>
+                            <li>Improved the design and usability of an existing system by refactoring Blade templates, introducing responsive layouts, and optimizing asset delivery.</li>
+                            <li>Incorporated multilingual support (English, Luganda, Kiswahili) via Laravel Localization.</li>
+                            <li>Wrote unit and integration tests (PHPUnit) to ensure reliability and reduce regressions.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Mobile Application Developer (Intern) <span class="employer">Developers Hub Corporation</span></h3>
+                        <p class="duration">February 2025 – April 2025</p>
+                        <ul>
+                            <li>Architected and maintained multiple Flutter apps, emphasizing modular, scalable code (Clean Architecture).</li>
+                            <li>Integrated Firebase for authentication, Firestore data syncing, Cloud Messaging (push notifications), and Analytics.</li>
+                            <li>Refactored legacy modules, reducing app size by 15% and improving load times by 25%.</li>
+                            <li>Coordinated with UI/UX designers on Figma hand-offs to ensure visual consistency and accessibility.</li>
+                        </ul>
+                    </div>
+                     <div class="experience-item">
+                        <h3>Mobile Application Developer (Contract) <span class="employer">Ndejje University FarmEase Initiative</span></h3>
+                        <p class="duration">February 2025 – March 2025</p>
+                        <ul>
+                            <li>Led development of FarmEase using Flutter & Firebase, featuring QR code scanning/generation for livestock tags and real-time updates to animal health and production records via Firestore.</li>
+                            <li>Built AI modules (Python back-end) to auto-generate farm operational reports, streamlining bookkeeping.</li>
+                            <li>Collaborated with IoT engineers to prototype sensor integrations (temperature, humidity) and capture environmental data.</li>
+                            <li>Managed RESTful API integrations for third-party services (payment gateways, SMS notifications).</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Mobile Developer Intern <span class="employer">CodSoft</span></h3>
+                        <p class="duration">July 2024 – March 2025</p>
+                        <ul>
+                            <li>Developed a University Attendance demo app with real-time student check-ins via QR codes and an admin dashboard with attendance analytics.</li>
+                            <li>Built a Task Manager app focusing on intuitive UI components and state management with Provider, BLOC, and GetX for scalability.</li>
+                            <li>Conducted comprehensive testing (widget, integration) and debugging, improving app stability by 30%.</li>
+                        </ul>
+                    </div>
+                     <div class="experience-item">
+                        <h3>Mobile Application Developer (Part-Time) <span class="employer">Lattelink</span></h3>
+                        <p class="duration">October 2024 – January 2025</p>
+                        <ul>
+                            <li>Designed and built a social media platform in Flutter featuring real-time messaging (Firestore streams) and multimedia sharing with Cloud Storage integration.</li>
+                            <li>Architected robust RESTful APIs in Laravel to manage posts, comments, and user profiles.</li>
+                            <li>Integrated state management patterns (Provider, BLOC, GetX) to maintain clean, testable code.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3>App Designer - Google Challenge Team <span class="employer">AI Nanny</span></h3>
+                        <p class="duration">February 2024 – June 2024</p>
+                        <ul>
+                            <li>Conceptualized and designed an AI-driven nanny assistant prototype for Google Challenge 2024.</li>
+                            <li>Defined user journeys, created wireframes and interactive prototypes using Figma.</li>
+                            <li>Developed front-end in Flutter focusing on accessibility (screen-reader support, scalable text)</li>
+                            <li>Coordinated with ML specialists to integrate early-stage AI features (voice recognition, scheduling).</li>
+                        </ul>
+                    </div>
+                     <div class="experience-item">
+                        <h3>Marketing Director <span class="employer">HiLo Bakeries Namugongo</span></h3>
+                        <p class="duration">January 2023 – June 2023</p>
+                        <ul>
+                            <li>Directed all digital marketing efforts, achieving a 20% sales uplift.</li>
+                            <li>Designed and executed campaigns on Facebook, Instagram, and WhatsApp, driving brand awareness.</li>
+                            <li>Monitored campaign KPIs using Google Analytics; reallocated budget in real time to maximize ROI.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Freelance Developer & Passion Projects <span class="employer">Remote</span></h3>
+                        <p class="duration">February 2025 – Present</p>
+                        <ul>
+                            <li>Experimenting with FinTech features (mobile payments, wallet integrations) in Flutter prototypes.</li>
+                            <li>Building Laravel APIs for personal projects focusing on authentication, role-based access, and payment gateways.</li>
+                            <li>Integrating machine learning (TensorFlow Lite) into Flutter apps for on-device inference.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+        </section>
+
+        <section id="projects" class="section-padding bg-light">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>FarmEase - Cow Management App</h3>
+                        <p class="project-description">Led development of FarmEase using Flutter & Firebase, featuring QR code scanning/generation to uniquely tag livestock, and real-time updates to animal health and production records via Firestore. Built AI modules (Python back-end) to auto-generate farm operational reports, streamlining bookkeeping. Collaborated with IoT engineers for sensor integrations.</p>
+                        <a href="https://github.com/kazibwefrancis/FarmEase" target="_blank" class="btn btn-primary">View Code <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="project-card">
+                        <h3>My AI Nanny - Google Challenge Prototype</h3>
+                        <p class="project-description">Conceptualized and designed an AI-driven nanny assistant prototype for Google Challenge 2024. Developed front-end in Flutter focusing on accessibility and coordinated with ML specialists to integrate early-stage AI features (voice recognition, scheduling).</p>
+                        <a href="https://github.com/kazibwefrancis/AINanny.git" target="_blank" class="btn btn-primary">View Code <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Totebags&More E-commerce Site</h3>
+                        <p class="project-description">A fully functional online store developed with Laravel, featuring secure payment gateway integrations, intuitive user interfaces, and robust product management. Implemented full CRUD operations and user authentication.</p>
+                        <a href="https://github.com/kazibwefrancis/Totebags.website" target="_blank" class="btn btn-primary">View Code <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Gemnet - User Management System</h3>
+                        <p class="project-description">A robust and secure User Management System built using plain PHP and MySQL. This system provides essential user authentication, role-based access control, and profile management functionalities with a focus on security best practices.</p>
+                        <a href="https://github.com/kazibwefrancis/Gemnet---Basic-User-Management-System" target="_blank" class="btn btn-primary">View Code <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                     <div class="project-card">
+                        <h3>University Attendance & Task Manager Apps</h3>
+                        <p class="project-description">Developed a Flutter-based University Attendance demo app with real-time student check-ins via QR codes and an admin dashboard. Also built a Task Manager app focusing on intuitive UI and scalable state management.</p>
+                        <a href="#" class="btn btn-primary disabled-link" onclick="return false;">Code Private <i class="fas fa-lock"></i></a>
+                    </div>
+                     <div class="project-card">
+                        <h3>Social Media Platform (Lattelink)</h3>
+                        <p class="project-description">Designed and built a social media platform in Flutter featuring real-time messaging (Firestore streams) and multimedia sharing. Architected robust Laravel APIs to manage posts, comments, and user profiles.</p>
+                        <a href="#" class="btn btn-primary disabled-link" onclick="return false;">Code Private <i class="fas fa-lock"></i></a>
+                    </div>
                 </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-    
-    
+            </div>
+        </section>
+
+        <section id="education" class="section-padding">
+            <div class="container">
+                <h2>Education & Certifications</h2>
+                <div class="education-content">
+                    <div class="education-item">
+                        <h3>Bachelor of Software Engineering</h3>
+                        <p class="institution">Makerere University | Aug 2023 - Expected 2027</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Uganda Advanced Certificate of Education</h3>
+                        <p class="institution">VIVA College School, Jinja | Feb 2020 - Dec 2022</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Uganda Certificate of Education</h3>
+                        <p class="institution">VIVA College School, Jinja | Feb 2016 - Nov 2019</p>
+                    </div>
+                </div>
+                <h3 class="centered-text">Achievements & Awards</h3>
+                <ul class="achievements-list centered-text">
+                    <li>Google Hackathon Participation Award (2024)</li>
+                    <li>Innovation Consortium's Medal of Excellence Award (2024)</li>
+                    <li>PLP Africa Certificate in Web Development (2023)</li>
+                </ul>
+                <a href="https://docs.google.com/document/d/1DyjTBAjesjCTgdHnv9h1YgTOVTm08ByO_21fxQ9N6HI/edit?tab=t.0#bookmark=id.ra11m7ew8zvq" target="_blank" class="btn btn-secondary centered-text">View My Full CV <i class="fas fa-file-alt"></i></a>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding bg-light">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>Have a project in mind, a question, or just want to say hi? Feel free to reach out!</p>
+                <form action="https://formspree.io/f/xvgpnqjd" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="_replyto" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2024 Kazibwe Francis | <a href="https://github.com/kazibwefrancis" target="_blank">GitHub</a></p>
+        <div class="container">
+            <p>&copy; 2024 Kazibwe Francis. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/kazibwefrancis" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/francis-kazibwe-5b5269305" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
