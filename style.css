@@ -1,3 +1,137 @@
+/* Hamburger menu styles */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+.nav-toggle .bar {
+  width: 28px;
+  height: 3px;
+  background: #222;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.nav-toggle.open .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.open .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Default nav-links display for desktop */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 70vw;
+    max-width: 300px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 0 0 8px 8px;
+    z-index: 1000;
+    padding: 1rem 0;
+  }
+  .nav-links.nav-open {
+    display: flex;
+  }
+  .nav-links li {
+    margin: 0.7rem 0;
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+  nav {
+    position: relative;
+  }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    width: 95%;
+    padding: 0 5px;
+    margin: 0 auto;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-left: 0;
+  }
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+  .skills-grid, .projects-grid, .experience-timeline, .education-content {
+    display: block;
+  }
+  .skill-items-group, .project-card, .experience-item, .education-item {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+  }
+  .about-content, .contact-form {
+    padding: 0;
+  }
+  .achievements-list.centered-text {
+    padding-left: 0;
+  }
+  .btn, .btn-primary, .btn-secondary {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+  }
+  .section-padding {
+    padding: 2rem 0 1rem 0;
+  }
+  h1, h2, h3 {
+    font-size: 1.3em;
+    word-break: break-word;
+  }
+  .tagline {
+    font-size: 1em;
+  }
+  .social-links a {
+    margin: 0 0.5rem;
+  }
+  .form-group {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  input, textarea {
+    width: 100%;
+    font-size: 1em;
+  }
+}
 /* Centered text utility for Achievements & Awards section */
 .centered-text {
     text-align: center;
