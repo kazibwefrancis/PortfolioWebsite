@@ -378,13 +378,19 @@
         </div>
     </footer>
 </body>
+</body>
 <script>
-// Hamburger menu toggle for mobile nav
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
-navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('nav-open');
-  navToggle.classList.toggle('open');
+// Hamburger menu toggle for mobile nav (wait for DOM)
+document.addEventListener('DOMContentLoaded', function() {
+  var navToggle = document.querySelector('.nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', function() {
+      navLinks.classList.toggle('nav-open');
+      navToggle.classList.toggle('open');
+    });
+  }
 });
 </script>
+</html>
 </html>
