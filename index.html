@@ -3,394 +3,971 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kazibwe Francis - Software Engineer Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Kazibwe Francis — Systems Engineer</title>
+    <meta name="description" content="Kazibwe Francis is a systems engineer in Kampala, Uganda, building mobile apps, web systems and APIs end to end with Flutter, React Native, React, Next.js, Node.js, Laravel and .NET.">
+    <meta property="og:title" content="Kazibwe Francis — Systems Engineer">
+    <meta property="og:description" content="Mobile, web and backend systems, built end to end. Live work, stack and experience.">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/jpeg" href="omoi.jpg">
+    <link rel="apple-touch-icon" href="omoi.jpg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
 </head>
 <body>
-    <header class="hero-section">
-        <div class="header-content">
-            <h1>Kazibwe Francis</h1>
-            <p class="tagline">Mobile Developer (Flutter) | Back-end (PHP/Laravel/C#) Developer | Digital Innovator</p>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ============ NAV ============ -->
+    <header class="nav">
+        <div class="nav-inner">
+            <a class="brand" href="#top" aria-label="Kazibwe Francis — home">
+                <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="8" y="8" width="84" height="84"/>
+                    <path d="M33 26v48M68 26 33 52l35 22"/>
+                </svg>
+                Kazibwe Francis
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#projects">Live work</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a class="btn btn-primary nav-cta" href="#contact">Get in touch</a>
         </div>
     </header>
 
-    <nav>
-        <button class="nav-toggle" aria-label="Toggle navigation">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <main id="main">
 
-    <main>
-        <section id="about" class="section-padding">
-            <div class="container">
-                <h2>About Me</h2>
-                <div class="about-content">
+        <!-- ============ INTRODUCTION ============ -->
+        <section class="section hero" id="top">
+            <div class="wrap">
+                <div class="hero-grid">
+                    <div>
+                        <p class="kicker">Portfolio · Systems Engineer</p>
+                        <h1>Kazibwe Francis</h1>
+                        <span class="rule"></span>
+                        <p class="lead">
+                            A systems engineer who builds mobile apps, web systems and APIs that talk to each other,
+                            end to end: from Flutter and React Native in the user’s hand to the Node.js, Laravel and
+                            .NET services behind it, deployed and running live.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="btn btn-primary" href="#projects">See live work <i data-lucide="arrow-right"></i></a>
+                            <a class="btn" href="https://docs.google.com/document/d/1DyjTBAjesjCTgdHnv9h1YgTOVTm08ByO_21fxQ9N6HI/edit?tab=t.0#bookmark=id.ra11m7ew8zvq" target="_blank" rel="noopener">Full CV <i data-lucide="file-text"></i></a>
+                        </div>
+                    </div>
+
+                    <figure class="plate">
+                        <div class="plate-frame">
+                            <img src="francis.jpg" width="720" height="960" alt="Portrait of Kazibwe Francis, smiling, wearing round glasses and a blue patterned sweater">
+                        </div>
+                        <figcaption>
+                            <span class="plate-mark"></span>
+                            <span class="plate-name">Kazibwe Francis</span>
+                            <span class="plate-role">Systems Engineer · Kampala, Uganda</span>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <dl class="glance">
+                    <div><dt>Role</dt><dd>Systems Engineer</dd></div>
+                    <div><dt>Based</dt><dd>Kampala, Uganda</dd></div>
+                    <div><dt>Focus</dt><dd>Mobile · Web · Backend · AI</dd></div>
+                    <div><dt>Studying</dt><dd>BSc Software Engineering, Makerere</dd></div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section class="section section--surface" id="about">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="kicker">The profile</p>
+                    <h2 class="section-title">One engineer, the whole system</h2>
+                    <span class="rule"></span>
+                    <p class="lead">Mobile, web, backend and AI, shipped together so the pieces actually fit.</p>
+                </div>
+
+                <div class="article">
                     <p>
-                        Hi! I'm Kazibwe Francis, a creative and solutions-driven Mobile Developer and Back-end Engineer  with hands-on expertise in Flutter, Dart, Firebase, PHP, Laravel, and C# (.NET Core framework). I'm passionate about integrating AI, Machine Learning, FinTech, and IoT to build high-performance, user-centric applications. I'm adept at agile methodologies, cross-functional collaboration, and delivering scalable digital solutions that drive transformation.
+                        Kazibwe Francis is a systems engineer based in Kampala, Uganda, with several years of hands-on experience
+                        building and shipping production apps across mobile, web and backend. His work covers the full
+                        development lifecycle: <strong>early architecture and API design, live deployment, monitoring and ongoing
+                        maintenance</strong>.
                     </p>
                     <p>
-                        My objective is to secure a challenging role where I can leverage and expand my expertise in mobile (Flutter/Dart/Firebase) and back-end (PHP/Laravel) development, incorporating emerging technologies (AI, IoT, FinTech) to deliver impactful, innovative software solutions.
+                        He has built systems for some of Uganda’s most important institutions, including the Uganda Civil Aviation
+                        Authority and the National Social Security Fund, and has worked in collaborative, multi-disciplinary teams
+                        both on-site and remote. His strongest and most consistent focus is <strong>mobile and full-stack
+                        development</strong>: cross-platform apps and interfaces that are polished and technically solid, with real
+                        attention to performance, responsiveness, accessibility and how people actually use what he builds.
                     </p>
                     <p>
-                        Beyond coding, I actively contribute to the tech community as the Secretary of the Makerere Tech Society and serve as the Class Representative for Year 2 Software Engineering at Makerere University. I thrive on tackling complex problems and building impactful applications.
+                        He has shipped Flutter apps to production, managed live over-the-air updates, integrated AI and machine-learning
+                        features, and built backend systems that real users depend on every day. He owns products end to end,
+                        including Hoscover at Jurya Technologies, and continues to build Sandi AI and DHQ AI at Keti AI.
                     </p>
+                </div>
+
+                <div class="split split--top traits">
+                    <div>
+                        <h3 class="col-title">Strengths</h3>
+                        <ul class="rows">
+                            <li>
+                                <div class="icon-wrap"><i data-lucide="layers"></i></div>
+                                <div>
+                                    <h3>End-to-end ownership</h3>
+                                    <p>Architecture, API design, web frontend, mobile app, deployment and monitoring, carried by one engineer from first decision to live product.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-wrap"><i data-lucide="rocket"></i></div>
+                                <div>
+                                    <h3>Shipping and staying live</h3>
+                                    <p>Production deployments on Railway and Vercel, and live patches to mobile users through Shorebird and Expo, without waiting on a store release.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-wrap"><i data-lucide="workflow"></i></div>
+                                <div>
+                                    <h3>Making systems talk to each other</h3>
+                                    <p>Payment gateways, SMS, IoT sensor feeds and government legacy-system APIs, stitched into one coherent product.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-wrap"><i data-lucide="gauge"></i></div>
+                                <div>
+                                    <h3>Performance, access and care</h3>
+                                    <p>Apps made 15% smaller and 25% faster to load, screen-reader support, trilingual interfaces, and documentation people actually use.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="col-title">Interests</h3>
+                        <ul class="rows">
+                            <li>
+                                <div class="icon-wrap"><i data-lucide="smartphone"></i></div>
+                                <div>
+                                    <h3>Cross-platform craft</h3>
+                                    <p>Flutter and React Native apps that feel native on both platforms, and Flutter on the web, which I’m exploring.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-wrap"><i data-lucide="sparkles"></i></div>
+                                <div>
+                                    <h3>Applied AI</h3>
+                                    <p>Speech recognition, on-device machine learning and LLM APIs, used to solve concrete product problems rather than for show.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-wrap"><i data-lucide="activity"></i></div>
+                                <div>
+                                    <h3>Real-time data</h3>
+                                    <p>Live dashboards, WebSockets and streaming pipelines that turn raw feeds into decisions.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-wrap"><i data-lucide="landmark"></i></div>
+                                <div>
+                                    <h3>Technology for East African institutions</h3>
+                                    <p>Savings groups, schools, aviation, social security and agriculture: systems where reliability changes real lives.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pullquote">
                     <p>
-                        Let's connect! I'm always open to discussing tech, exploring collaborations, or simply sharing ideas. Feel free to reach out for new opportunities and exciting challenges.
+                        The tools are changing faster than ever, and AI is rewriting how software gets built. I don’t stand apart
+                        from that; I build with it. But the standard never moves. <em>Software excellence</em> means systems that are
+                        fast, secure and dependable for the people who rely on them, and I will keep learning, keep shipping and keep
+                        <em>merging every new advancement</em> with the discipline that makes software last.
                     </p>
+                    <cite>Kazibwe Francis</cite>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="section-padding bg-light">
-            <div class="container">
-                <h2>My Core Skills & Technologies</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
-                        <div class="skill-items-group">
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="Flutter" class="skill-icon" />
-                                <p>Flutter</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="Dart" class="skill-icon" />
-                                <p>Dart</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-fire skill-icon"></i>
-                                <p>Firebase</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-cubes skill-icon"></i>
-                                <p>State Management (Provider, BLOC, GetX)</p>
+        <!-- ============ STACK ============ -->
+        <section class="section" id="stack">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="kicker">Tech stack</p>
+                    <h2 class="section-title">Tools across the full stack</h2>
+                    <span class="rule"></span>
+                    <p class="lead">I build web systems, mobile apps, and systems that talk to each other, in many languages and frameworks, choosing the right tool for each job. Filled tags mark the daily drivers.</p>
+                </div>
+
+                <div class="grid-3">
+                    <article class="card stripe-accent">
+                        <div class="icon-wrap"><i data-lucide="smartphone"></i></div>
+                        <h3>Mobile</h3>
+                        <p>Cross-platform iOS and Android apps in Flutter and Dart, and in React Native with Expo, structured with Clean Architecture. Firebase covers authentication, real-time Firestore data, push messaging and analytics. Live fixes ship over the air with Shorebird and Expo, with no store release needed.</p>
+                        <ul class="chips">
+                            <li class="tag tag-accent">Flutter</li>
+                            <li class="tag tag-accent">Dart</li>
+                            <li class="tag tag-accent">React Native</li>
+                            <li class="tag tag-accent">Expo</li>
+                            <li class="tag tag-plain">Expo Router</li>
+                            <li class="tag tag-plain">Firebase Auth</li>
+                            <li class="tag tag-plain">Firestore</li>
+                            <li class="tag tag-plain">Cloud Messaging</li>
+                            <li class="tag tag-plain">BLoC</li>
+                            <li class="tag tag-plain">Provider</li>
+                            <li class="tag tag-plain">GetX</li>
+                            <li class="tag tag-plain">Redux Toolkit</li>
+                            <li class="tag tag-plain">Shorebird OTA</li>
+                            <li class="tag tag-plain">EAS Build</li>
+                        </ul>
+                    </article>
+
+                    <article class="card stripe-accent-2">
+                        <div class="icon-wrap"><i data-lucide="globe"></i></div>
+                        <h3>Web &amp; frontend</h3>
+                        <p>I build web systems: dashboards, portals and admin tools across the JavaScript ecosystem, from modern ES6+ JavaScript and TypeScript to React and Next.js, styled with Tailwind CSS or Bootstrap. I’m also experimenting with Flutter for the web.</p>
+                        <ul class="chips">
+                            <li class="tag tag-accent-2">JavaScript (ES6+)</li>
+                            <li class="tag tag-accent-2">TypeScript</li>
+                            <li class="tag tag-accent-2">React</li>
+                            <li class="tag tag-accent-2">Next.js</li>
+                            <li class="tag tag-plain">HTML5</li>
+                            <li class="tag tag-plain">CSS3</li>
+                            <li class="tag tag-plain">Tailwind CSS</li>
+                            <li class="tag tag-plain">Bootstrap</li>
+                            <li class="tag tag-plain">Vite</li>
+                            <li class="tag tag-plain">TanStack Query</li>
+                            <li class="tag tag-plain">Flutter Web (exploring)</li>
+                        </ul>
+                    </article>
+
+                    <article class="card stripe-accent">
+                        <div class="icon-wrap"><i data-lucide="server"></i></div>
+                        <h3>Backend &amp; APIs</h3>
+                        <p>I build systems that talk to each other: RESTful APIs with multi-role authentication, modular MVC and service-layer patterns. Laravel for full applications, Node.js (Express, NestJS) with Prisma for typed APIs, FastAPI for lightweight high-performance services, and C# and .NET for enterprise data aggregation across legacy systems.</p>
+                        <ul class="chips">
+                            <li class="tag tag-accent">Node.js</li>
+                            <li class="tag tag-accent">Express</li>
+                            <li class="tag tag-accent">NestJS</li>
+                            <li class="tag tag-accent">Laravel</li>
+                            <li class="tag tag-plain">PHP</li>
+                            <li class="tag tag-plain">Python</li>
+                            <li class="tag tag-plain">FastAPI</li>
+                            <li class="tag tag-plain">C# / .NET</li>
+                            <li class="tag tag-plain">Java</li>
+                            <li class="tag tag-plain">Prisma</li>
+                            <li class="tag tag-plain">JWT &amp; RBAC</li>
+                            <li class="tag tag-plain">Swagger / OpenAPI</li>
+                        </ul>
+                    </article>
+
+                    <article class="card stripe-accent-2">
+                        <div class="icon-wrap"><i data-lucide="activity"></i></div>
+                        <h3>Real-time &amp; data visualisation</h3>
+                        <p>Production dashboards that aggregate live data from several sources into clear, decision-ready charts, backed by WebSockets, streaming data pipelines and live data integration across distributed product ecosystems.</p>
+                        <ul class="chips">
+                            <li class="tag tag-plain">Recharts</li>
+                            <li class="tag tag-plain">Chart.js</li>
+                            <li class="tag tag-plain">WebSockets</li>
+                            <li class="tag tag-plain">Socket.IO</li>
+                            <li class="tag tag-plain">Streaming pipelines</li>
+                            <li class="tag tag-plain">REST integration</li>
+                        </ul>
+                    </article>
+
+                    <article class="card stripe-accent">
+                        <div class="icon-wrap"><i data-lucide="database"></i></div>
+                        <h3>Databases</h3>
+                        <p>Schema design and query optimisation across relational and real-time stores, choosing the data layer that fits each product’s scale and requirements.</p>
+                        <ul class="chips">
+                            <li class="tag tag-accent">PostgreSQL</li>
+                            <li class="tag tag-accent">MySQL</li>
+                            <li class="tag tag-plain">Supabase</li>
+                            <li class="tag tag-plain">Firebase Firestore</li>
+                            <li class="tag tag-plain">MariaDB</li>
+                            <li class="tag tag-plain">SQLite</li>
+                            <li class="tag tag-plain">Redis</li>
+                        </ul>
+                    </article>
+
+                    <article class="card stripe-accent-2">
+                        <div class="icon-wrap"><i data-lucide="cloud"></i></div>
+                        <h3>Deployment &amp; operations</h3>
+                        <p>I own the path to production: backend services on Railway, frontends on Vercel with continuous deployment, and monitoring of live environments so problems are seen before users report them.</p>
+                        <ul class="chips">
+                            <li class="tag tag-accent-2">Railway</li>
+                            <li class="tag tag-accent-2">Vercel</li>
+                            <li class="tag tag-plain">CI / CD</li>
+                            <li class="tag tag-plain">Sentry</li>
+                            <li class="tag tag-plain">Git &amp; GitHub</li>
+                            <li class="tag tag-plain">Production monitoring</li>
+                        </ul>
+                    </article>
+
+                    <article class="card stripe-accent">
+                        <div class="icon-wrap"><i data-lucide="cpu"></i></div>
+                        <h3>AI &amp; machine learning</h3>
+                        <p>Automatic speech recognition with Whisper and Sunbird AI, on-device inference with TensorFlow Lite inside Flutter apps, Python backends that turn raw data into structured reports, and LLM APIs including Anthropic Claude and OpenAI.</p>
+                        <ul class="chips">
+                            <li class="tag tag-accent">Claude API</li>
+                            <li class="tag tag-plain">OpenAI API</li>
+                            <li class="tag tag-plain">Whisper</li>
+                            <li class="tag tag-plain">Sunbird AI</li>
+                            <li class="tag tag-plain">TensorFlow Lite</li>
+                            <li class="tag tag-plain">Azure Document Intelligence</li>
+                        </ul>
+                    </article>
+
+                    <article class="card stripe-accent-2">
+                        <div class="icon-wrap"><i data-lucide="plug"></i></div>
+                        <h3>Messaging &amp; integrations</h3>
+                        <p>The rails real products depend on: payment gateways, SMS notifications, WhatsApp Business API pipelines, conversational flows, IoT sensor data feeds and government legacy-system APIs.</p>
+                        <ul class="chips">
+                            <li class="tag tag-plain">PesaPal</li>
+                            <li class="tag tag-plain">Mobile money</li>
+                            <li class="tag tag-plain">Africa’s Talking SMS</li>
+                            <li class="tag tag-plain">WhatsApp Business API</li>
+                            <li class="tag tag-plain">Voiceflow</li>
+                            <li class="tag tag-plain">IoT sensor feeds</li>
+                            <li class="tag tag-plain">Legacy system APIs</li>
+                        </ul>
+                    </article>
+
+                    <article class="card stripe-accent">
+                        <div class="icon-wrap"><i data-lucide="pen-tool"></i></div>
+                        <h3>Design, testing &amp; documentation</h3>
+                        <p>I implement Figma designs faithfully and contribute design opinions constructively. Reliability comes from PHPUnit coverage and widget and integration tests; hand-over comes from Swagger contracts, user guides and developer onboarding material.</p>
+                        <ul class="chips">
+                            <li class="tag tag-plain">Figma</li>
+                            <li class="tag tag-plain">Prototyping</li>
+                            <li class="tag tag-plain">PHPUnit</li>
+                            <li class="tag tag-plain">Widget &amp; integration tests</li>
+                            <li class="tag tag-plain">User guides</li>
+                            <li class="tag tag-plain">Agile delivery</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ AI WORKFLOW ============ -->
+        <section class="section section--surface" id="ai">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="kicker">Working with AI</p>
+                    <h2 class="section-title">AI in my daily workflow</h2>
+                    <span class="rule"></span>
+                    <p class="lead">AI is a real part of how I work, with clear boundaries around what it’s good at and where it shouldn’t be trusted.</p>
+                </div>
+
+                <div class="grid-2">
+                    <article class="card card--project stripe-accent">
+                        <div class="icon-wrap"><i data-lucide="bug"></i></div>
+                        <h3>Error diagnosis and debugging</h3>
+                        <p>A first-pass diagnostic tool. I describe the problem and share the relevant code, then use the response to generate hypotheses that I verify myself. It speeds up debugging without cutting corners on understanding what went wrong.</p>
+                    </article>
+                    <article class="card card--project stripe-accent-2">
+                        <div class="icon-wrap"><i data-lucide="layout-dashboard"></i></div>
+                        <h3>UI and interface feedback</h3>
+                        <p>Rapid feedback on interface decisions, colour contrast, layout hierarchy and component structure, like a design-review partner when I’m working alone.</p>
+                    </article>
+                    <article class="card card--project stripe-accent">
+                        <div class="icon-wrap"><i data-lucide="git-pull-request"></i></div>
+                        <h3>Peer-style code review</h3>
+                        <p>I paste sections of my own code in and ask for critique the way I would ask a senior colleague: readability issues, edge cases, naming inconsistencies. The output is a starting point, never a verdict.</p>
+                    </article>
+                    <article class="card card--project stripe-accent-2">
+                        <div class="icon-wrap"><i data-lucide="shield-check"></i></div>
+                        <h3>What I don’t use AI for</h3>
+                        <p>API keys, authentication credentials, core backend logic and sensitive user data never pass through AI tools. I handle those parts directly, with full awareness of what is at stake.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ LIVE WORK ============ -->
+        <section class="section" id="projects">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="kicker">Selected work</p>
+                    <h2 class="section-title">Live work</h2>
+                    <span class="rule"></span>
+                    <p class="lead">Products I’ve built that are running today. Each links to its hosted site or app; the full story behind each one is under Experience.</p>
+                </div>
+
+                <div class="grid-2">
+                    <article class="card card--project card--feature stripe-accent">
+                        <div class="card-top">
+                            <span class="tag tag-accent">Keti AI · Client project</span>
+                            <span class="card-year">2026</span>
+                        </div>
+                        <h3>Sandi AI</h3>
+                        <p>A savings-circle (VSLA) platform for East African markets, particularly Uganda. Groups manage members, contributions and transactions through a web admin dashboard and a React Native mobile app, backed by an Express and TypeScript API with SMS and payments built in.</p>
+                        <ul class="chips">
+                            <li class="tag tag-plain">React Native</li>
+                            <li class="tag tag-plain">Expo</li>
+                            <li class="tag tag-plain">Express</li>
+                            <li class="tag tag-plain">Prisma</li>
+                            <li class="tag tag-plain">Supabase</li>
+                            <li class="tag tag-plain">PesaPal</li>
+                        </ul>
+                        <ul class="live-list">
+                            <li>
+                                <a class="live" href="https://sandi-ai-web-app-production.up.railway.app" target="_blank" rel="noopener">
+                                    <i data-lucide="globe"></i>
+                                    <span class="live-label"><b>Web app</b><small>Admin dashboard · sandi-ai-web-app-production.up.railway.app</small></span>
+                                    <i class="live-go" data-lucide="arrow-up-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="live" href="https://play.google.com/store/apps/details?id=com.sandiai.app" target="_blank" rel="noopener">
+                                    <i data-lucide="smartphone"></i>
+                                    <span class="live-label"><b>Mobile app</b><small>Google Play · in testing ahead of production release</small></span>
+                                    <i class="live-go" data-lucide="arrow-up-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="card card--project card--feature stripe-accent-2">
+                        <div class="card-top">
+                            <span class="tag tag-accent-2">Jurya Technologies</span>
+                            <span class="card-year">2025 – 2026</span>
+                        </div>
+                        <h3>Hoscover</h3>
+                        <p>A hospitality technology platform architected and built end to end. A data-rich staff dashboard for hotel conversation escalation aggregates live data streams into decision-ready views, with the full API layer, real-time data flows and production deployment on Vercel.</p>
+                        <ul class="chips">
+                            <li class="tag tag-plain">Dashboards</li>
+                            <li class="tag tag-plain">Real-time data</li>
+                            <li class="tag tag-plain">API design</li>
+                            <li class="tag tag-plain">Vercel</li>
+                        </ul>
+                        <ul class="live-list">
+                            <li>
+                                <a class="live" href="https://hoscover-frontend-snowy.vercel.app" target="_blank" rel="noopener">
+                                    <i data-lucide="globe"></i>
+                                    <span class="live-label"><b>Staff dashboard</b><small>hoscover-frontend-snowy.vercel.app</small></span>
+                                    <i class="live-go" data-lucide="arrow-up-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="card card--project card--feature stripe-accent">
+                        <div class="card-top">
+                            <span class="tag tag-accent">PACT Consultancy</span>
+                            <span class="card-year">2025 – 2026</span>
+                        </div>
+                        <h3>PACT Command Center</h3>
+                        <p>Cross-platform Flutter apps for Android and iOS, kept current with over-the-air patches through Shorebird so fixes reach users without a full store release. Includes backend integration, platform-specific debugging and performance work.</p>
+                        <ul class="chips">
+                            <li class="tag tag-plain">Flutter</li>
+                            <li class="tag tag-plain">Shorebird OTA</li>
+                            <li class="tag tag-plain">Android &amp; iOS</li>
+                        </ul>
+                        <ul class="live-list">
+                            <li>
+                                <a class="live" href="https://pactorg.com" target="_blank" rel="noopener">
+                                    <i data-lucide="globe"></i>
+                                    <span class="live-label"><b>Website</b><small>pactorg.com</small></span>
+                                    <i class="live-go" data-lucide="arrow-up-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="live" href="https://app.pactorg.com" target="_blank" rel="noopener">
+                                    <i data-lucide="layout-dashboard"></i>
+                                    <span class="live-label"><b>Deployed app</b><small>app.pactorg.com</small></span>
+                                    <i class="live-go" data-lucide="arrow-up-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="live" href="https://play.google.com/store/apps/details?id=com.pact.workflow" target="_blank" rel="noopener">
+                                    <i data-lucide="smartphone"></i>
+                                    <span class="live-label"><b>Mobile app</b><small>Google Play</small></span>
+                                    <i class="live-go" data-lucide="arrow-up-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="card card--project card--feature stripe-accent-2">
+                        <div class="card-top">
+                            <span class="tag tag-accent-2">Uganda Civil Aviation Authority</span>
+                            <span class="card-year">2025</span>
+                        </div>
+                        <h3>Airport Stakeholder Feedback System</h3>
+                        <p>A production web survey application for the Uganda Civil Aviation Authority, delivered through NAJOD Technologies. Built in Laravel with trilingual support in English, Luganda and Kiswahili, and PHPUnit coverage throughout.</p>
+                        <ul class="chips">
+                            <li class="tag tag-plain">Laravel</li>
+                            <li class="tag tag-plain">Localization</li>
+                            <li class="tag tag-plain">PHPUnit</li>
+                        </ul>
+                        <ul class="live-list">
+                            <li>
+                                <a class="live" href="https://ucaa-survey.hippozug.com" target="_blank" rel="noopener">
+                                    <i data-lucide="globe"></i>
+                                    <span class="live-label"><b>Live survey system</b><small>ucaa-survey.hippozug.com</small></span>
+                                    <i class="live-go" data-lucide="arrow-up-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EXPERIENCE ============ -->
+        <section class="section section--surface" id="experience">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="kicker">Career</p>
+                    <h2 class="section-title">Experience &amp; delivery</h2>
+                    <span class="rule"></span>
+                    <p class="lead">Every engagement in depth: what was built, how, and what it delivered. Newest first.</p>
+                </div>
+
+                <ol class="timeline">
+                    <li class="role">
+                        <div class="role-when">
+                            <span>2026 – Present</span>
+                            <span class="tag tag-accent">Current</span>
+                        </div>
+                        <div>
+                            <h3>Sandi AI</h3>
+                            <p class="role-org">Keti AI · Client project</p>
+                            <p class="role-lead">A savings-circle (VSLA) platform targeting East African markets, particularly Uganda, built as a full-stack developer across every layer: web application, mobile application, backend and live deployment.</p>
+                            <ul>
+                                <li>Built and deployed the web application that gives users and administrators a browser-based interface for managing savings groups and transactions.</li>
+                                <li>Developed the mobile application in React Native (Expo), live on the Google Play Store for testing ahead of production release.</li>
+                                <li>Architected the backend in Express and TypeScript with Prisma and Supabase for data modelling and storage, integrating Africa’s Talking for SMS, PesaPal for payments and Voiceflow for conversational features.</li>
+                                <li>Owns the full deployment pipeline, managing live production infrastructure for both the web and backend services.</li>
+                            </ul>
+                            <ul class="chips">
+                                <li class="tag tag-plain">React Native</li>
+                                <li class="tag tag-plain">Expo</li>
+                                <li class="tag tag-plain">Express</li>
+                                <li class="tag tag-plain">TypeScript</li>
+                                <li class="tag tag-plain">Prisma</li>
+                                <li class="tag tag-plain">Supabase</li>
+                                <li class="tag tag-plain">PesaPal</li>
+                                <li class="tag tag-plain">Africa’s Talking</li>
+                                <li class="tag tag-plain">Voiceflow</li>
+                                <li class="tag tag-plain">Railway</li>
+                            </ul>
+                            <div class="role-links">
+                                <a class="btn" href="https://sandi-ai-web-app-production.up.railway.app" target="_blank" rel="noopener">Web app <i data-lucide="arrow-up-right"></i></a>
+                                <a class="btn" href="https://play.google.com/store/apps/details?id=com.sandiai.app" target="_blank" rel="noopener">Google Play <i data-lucide="arrow-up-right"></i></a>
                             </div>
                         </div>
+                    </li>
+
+                    <li class="role">
+                        <div class="role-when">
+                            <span>2026 – Present</span>
+                            <span class="tag tag-accent">Current</span>
+                        </div>
+                        <div>
+                            <h3>DHQ AI</h3>
+                            <p class="role-org">Keti AI · Client project</p>
+                            <p class="role-lead">An AI-assisted school-management system that gives administrators and staff a streamlined way to handle day-to-day school operations.</p>
+                            <ul>
+                                <li>Built and deployed the DHQ AI frontend and its supporting systems as the full-stack developer on the engagement.</li>
+                                <li>Extended the platform to a mobile app and a real-time backend serving headteachers, teachers, field and district officers, ministers and donors, covering attendance and roll calls, supply orders, funding and communications.</li>
+                                <li>Integrated LLM-generated summaries and document OCR into the backend to turn school records into readable insight.</li>
+                                <li>Managed the live deployment and hosting of the platform for the client.</li>
+                            </ul>
+                            <ul class="chips">
+                                <li class="tag tag-plain">Next.js</li>
+                                <li class="tag tag-plain">React Native</li>
+                                <li class="tag tag-plain">Express</li>
+                                <li class="tag tag-plain">Prisma</li>
+                                <li class="tag tag-plain">Socket.IO</li>
+                                <li class="tag tag-plain">Claude API</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="role">
+                        <div class="role-when"><span>2025 – 2026</span></div>
+                        <div>
+                            <h3>Hoscover</h3>
+                            <p class="role-org">Jurya Technologies</p>
+                            <p class="role-lead">A hospitality technology platform architected and developed end to end. One of the most formative experiences of the career: system architecture, user experience, API design, frontend development and production deployment, all at once, from the earliest design decisions through to live deployment on Vercel.</p>
+                            <ul>
+                                <li>Designed and implemented a data-rich frontend dashboard that aggregates live data streams and presents them as clear, decision-ready interfaces.</li>
+                                <li>Architected the full backend API layer and integrated it with the frontend, managing real-time data flows across the system.</li>
+                                <li>Made all major technology and architecture decisions independently, balancing speed of delivery against long-term maintainability.</li>
+                                <li>Deployed and maintained the live production environment on Vercel, managing continuous deployment and monitoring live behaviour.</li>
+                            </ul>
+                            <div class="role-links">
+                                <a class="btn" href="https://hoscover-frontend-snowy.vercel.app" target="_blank" rel="noopener">Live dashboard <i data-lucide="arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="role">
+                        <div class="role-when"><span>Sep 2025 – May 2026</span></div>
+                        <div>
+                            <h3>Cross-Platform Mobile Application</h3>
+                            <p class="role-org">PACT Consultancy · Software Engineer (hybrid)</p>
+                            <p class="role-lead">Contributed to the development and ongoing maintenance of cross-platform mobile applications built in Flutter.</p>
+                            <ul>
+                                <li>Developed and maintained Flutter apps for both Android and iOS, with a strong emphasis on consistent behaviour and reliability across platforms.</li>
+                                <li>Implemented over-the-air update delivery with Shorebird, pushing live patches to users’ devices without a full store release. This cut the time between a fix being ready and users receiving it, and gave the team far greater agility in responding to production issues.</li>
+                                <li>Handled backend integration, platform-specific debugging and performance optimisation across the application stack.</li>
+                                <li>Worked closely with a multi-disciplinary team where reliability and user satisfaction were central priorities.</li>
+                            </ul>
+                            <ul class="chips">
+                                <li class="tag tag-plain">Flutter</li>
+                                <li class="tag tag-plain">Dart</li>
+                                <li class="tag tag-plain">Shorebird</li>
+                            </ul>
+                            <div class="role-links">
+                                <a class="btn" href="https://pactorg.com" target="_blank" rel="noopener">Website <i data-lucide="arrow-up-right"></i></a>
+                                <a class="btn" href="https://app.pactorg.com" target="_blank" rel="noopener">Deployed app <i data-lucide="arrow-up-right"></i></a>
+                                <a class="btn" href="https://play.google.com/store/apps/details?id=com.pact.workflow" target="_blank" rel="noopener">Google Play <i data-lucide="arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="role">
+                        <div class="role-when"><span>Jun – Aug 2025</span></div>
+                        <div>
+                            <h3>Internal Systems Development</h3>
+                            <p class="role-org">National Social Security Fund (NSSF) Uganda · Software Engineering Intern</p>
+                            <p class="role-lead">Worked concurrently on two significant internal systems, both with direct operational impact on how the organisation functioned day to day.</p>
+                            <ul>
+                                <li>Built a service helpdesk application in Laravel to replace a third-party vendor platform, with multi-department and multi-role user management fully integrated with NSSF’s existing authentication infrastructure.</li>
+                                <li>Developed a .NET backend in C# that pulled and aggregated data from two separate legacy system APIs and delivered centralised, real-time analytics to a unified frontend dashboard, significantly reducing the manual reporting burden on department teams.</li>
+                                <li>Navigated complex existing infrastructure with care, communicated clearly with non-technical stakeholders, and delivered working software within a defined internship window.</li>
+                            </ul>
+                            <ul class="chips">
+                                <li class="tag tag-plain">Laravel</li>
+                                <li class="tag tag-plain">C# / .NET</li>
+                                <li class="tag tag-plain">Legacy APIs</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="role">
+                        <div class="role-when"><span>May – Jul 2025</span></div>
+                        <div>
+                            <h3>Speech Recognition and Translation</h3>
+                            <p class="role-org">Crest AI · Full Stack Developer Intern (remote)</p>
+                            <p class="role-lead">Contributed as a full-stack developer across frontend and backend workstreams on a multilingual speech-translation product.</p>
+                            <ul>
+                                <li>Built FastAPI endpoints powering multilingual and live speech-translation features, designing clean, well-documented API contracts for frontend integration.</li>
+                                <li>Constructed an automatic speech-recognition engine using the Whisper model alongside Sunbird AI, gaining direct experience of what production ML systems need in robustness, latency and error handling.</li>
+                                <li>Contributed Flutter features focused on JWT-based authentication and refined UI/UX.</li>
+                            </ul>
+                            <ul class="chips">
+                                <li class="tag tag-plain">FastAPI</li>
+                                <li class="tag tag-plain">Whisper</li>
+                                <li class="tag tag-plain">Sunbird AI</li>
+                                <li class="tag tag-plain">Flutter</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="role">
+                        <div class="role-when"><span>Mar – Jun 2025</span></div>
+                        <div>
+                            <h3>Web-Based Survey Application</h3>
+                            <p class="role-org">Uganda Civil Aviation Authority · via NAJOD Technologies (contract)</p>
+                            <p class="role-lead">A fully production-ready survey application for one of Uganda’s most important regulatory bodies: a high-stakes engagement where reliability, accessibility and data integrity were non-negotiable.</p>
+                            <ul>
+                                <li>Built the system in Laravel with a strong emphasis on long-term maintainability, using modular controllers and clearly separated service layers.</li>
+                                <li>Implemented trilingual support across English, Luganda and Kiswahili with Laravel Localization, making the platform accessible to a significantly broader range of respondents.</li>
+                                <li>Delivered in two-week agile sprints in direct collaboration with survey teams and data analysts, adapting to evolving requirements without compromising delivery timelines.</li>
+                                <li>Maintained PHPUnit test coverage throughout to protect reliability and catch regressions before they reached production.</li>
+                            </ul>
+                            <ul class="chips">
+                                <li class="tag tag-plain">Laravel</li>
+                                <li class="tag tag-plain">Localization</li>
+                                <li class="tag tag-plain">PHPUnit</li>
+                                <li class="tag tag-plain">Agile sprints</li>
+                            </ul>
+                            <div class="role-links">
+                                <a class="btn" href="https://ucaa-survey.hippozug.com" target="_blank" rel="noopener">Live survey system <i data-lucide="arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="role">
+                        <div class="role-when"><span>Feb – Mar 2025</span></div>
+                        <div>
+                            <h3>FarmEase Agricultural Management System</h3>
+                            <p class="role-org">Ndejje University FarmEase Initiative · Mobile Application Developer (contract)</p>
+                            <p class="role-lead">A Flutter and Firebase agricultural management system, solving real operational problems through mobile software.</p>
+                            <ul>
+                                <li>Led full development from initial architecture through delivery: QR-code scanning and generation for unique livestock tagging, real-time updates to animal health and production records through Firestore, and a Python-powered AI backend that automatically generated farm operational reports.</li>
+                                <li>Collaborated with IoT engineers on prototype sensor integrations, capturing temperature and humidity data and connecting physical infrastructure to the digital management layer.</li>
+                                <li>Integrated third-party APIs for payment processing and SMS notifications, extending the system beyond simple record-keeping.</li>
+                                <li>Delivered hands-on training sessions to farm staff alongside thorough user documentation, so the system was actually used rather than simply handed over.</li>
+                            </ul>
+                            <ul class="chips">
+                                <li class="tag tag-plain">Flutter</li>
+                                <li class="tag tag-plain">Firebase</li>
+                                <li class="tag tag-plain">Python</li>
+                                <li class="tag tag-plain">IoT</li>
+                                <li class="tag tag-plain">QR codes</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="role">
+                        <div class="role-when"><span>2024 – 2025</span></div>
+                        <div>
+                            <h3>Lattelink Social Platform</h3>
+                            <p class="role-org">Lattelink · Mobile Application Developer (part-time)</p>
+                            <p class="role-lead">A social media platform designed and built in Flutter, taken from initial concept to a working, deployable application.</p>
+                            <ul>
+                                <li>Implemented real-time messaging through Firestore streams, multimedia sharing with Firebase Cloud Storage, and a Laravel REST API managing posts, comments and user profile data.</li>
+                                <li>Integrated Firebase Analytics for user-behaviour tracking and ran structured in-app feedback sessions to improve the experience iteratively, based on what real users actually did.</li>
+                            </ul>
+                            <ul class="chips">
+                                <li class="tag tag-plain">Flutter</li>
+                                <li class="tag tag-plain">Firestore</li>
+                                <li class="tag tag-plain">Laravel</li>
+                                <li class="tag tag-plain">Firebase Analytics</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="role">
+                        <div class="role-when"><span>2024 – 2025</span></div>
+                        <div>
+                            <h3>DevelopersHub Applications</h3>
+                            <p class="role-org">DevelopersHub Corporation · Mobile Application Developer (intern)</p>
+                            <ul>
+                                <li>Architected and maintained multiple Flutter applications using Clean Architecture, so each codebase stayed navigable and extensible as features were added.</li>
+                                <li>Through deliberate, measured refactoring, reduced overall application sizes by 15% and improved load times by 25%.</li>
+                                <li>Integrated Firebase authentication, Firestore sync, Cloud Messaging and Analytics, and coordinated with UI/UX designers on Figma hand-offs.</li>
+                            </ul>
+                            <ul class="chips">
+                                <li class="tag tag-plain">Flutter</li>
+                                <li class="tag tag-plain">Clean Architecture</li>
+                                <li class="tag tag-plain">Firebase</li>
+                                <li class="tag tag-plain">Figma</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="role">
+                        <div class="role-when"><span>2024</span></div>
+                        <div>
+                            <h3>AI Nanny</h3>
+                            <p class="role-org">Google Hackathon 2024 · App Designer &amp; Developer</p>
+                            <p class="role-lead">An AI-driven childcare assistant prototype, built as part of a team competing in the Google Hackathon 2024.</p>
+                            <ul>
+                                <li>Defined user journeys, wireframes and interactive prototypes in Figma, and built the frontend in Flutter with a focus on accessibility, including screen-reader support and scalable text rendering.</li>
+                                <li>Coordinated closely with machine-learning specialists to integrate early-stage AI features, including voice recognition and intelligent scheduling assistance.</li>
+                                <li>Received a Google Hackathon Participation Award for the team’s work.</li>
+                            </ul>
+                            <ul class="chips">
+                                <li class="tag tag-plain">Flutter</li>
+                                <li class="tag tag-plain">Figma</li>
+                                <li class="tag tag-plain">Voice recognition</li>
+                                <li class="tag tag-plain">Accessibility</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============ EDUCATION ============ -->
+        <section class="section" id="education">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="kicker">Background</p>
+                    <h2 class="section-title">Education &amp; recognition</h2>
+                    <span class="rule"></span>
+                    <p class="lead">Formal training in software engineering, backed by hackathons and certification.</p>
+                </div>
+
+                <div class="split split--top">
+                    <div>
+                        <h3 class="col-title">Education</h3>
+                        <ul class="rows">
+                            <li>
+                                <div class="icon-wrap"><i data-lucide="graduation-cap"></i></div>
+                                <div>
+                                    <h3>Bachelor of Science in Software Engineering</h3>
+                                    <p>Makerere University</p>
+                                    <p class="when">In progress · Expected 2027</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-wrap"><i data-lucide="graduation-cap"></i></div>
+                                <div>
+                                    <h3>Uganda Advanced Certificate of Education</h3>
+                                    <p>Viva College School</p>
+                                    <p class="when">2020 – 2022</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-wrap"><i data-lucide="graduation-cap"></i></div>
+                                <div>
+                                    <h3>Uganda Certificate of Education</h3>
+                                    <p>Viva College School</p>
+                                    <p class="when">2016 – 2019</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
-                    <div class="skill-category">
-                        <h3><i class="fas fa-server"></i> Back-end Development</h3>
-                        <div class="skill-items-group">
-                            <div class="skill-item">
-                                <i class="fab fa-php skill-icon"></i>
-                                <p>PHP</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-laravel skill-icon"></i>
-                                <p>Laravel</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-code skill-icon"></i>
-                                <p>C# (.NET Core)</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-code-branch skill-icon"></i>
-                                <p>RESTful API Design</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3><i class="fas fa-globe"></i> Web Technologies</h3>
-                        <div class="skill-items-group">
-                            <div class="skill-item">
-                                <i class="fab fa-html5 skill-icon"></i>
-                                <p>HTML</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-css3-alt skill-icon"></i>
-                                <p>CSS</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-js skill-icon"></i>
-                                <p>JavaScript</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-react skill-icon"></i>
-                                <p>React</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3><i class="fas fa-database"></i> Databases</h3>
-                        <div class="skill-items-group">
-                            <div class="skill-item">
-                                <i class="fas fa-database skill-icon"></i>
-                                <p>MySQL</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-fire skill-icon"></i>
-                                <p>Firebase Firestore</p>
-                            </div>
-                             <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg" alt="Supabase" class="skill-icon" />
-                                <p>Supabase</p>
-                            </div>
-                        </div>
-                    </div>
-
-                     <div class="skill-category">
-                        <h3><i class="fas fa-tools"></i> Tools & Others</h3>
-                        <div class="skill-items-group">
-                            <div class="skill-item">
-                                <i class="fab fa-git-alt skill-icon"></i>
-                                <p>Git / GitHub</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-cogs skill-icon"></i>
-                                <p>Third-Party APIs</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-wifi skill-icon"></i>
-                                <p>IoT Sensors</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma" class="skill-icon" />
-                                <p>Figma</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-robot skill-icon"></i>
-                                <p>AI/ML Concepts</p>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-sitemap skill-icon"></i>
-                                <p>Agile Methodologies</p>
-                            </div>
-                        </div>
+                    <div>
+                        <h3 class="col-title">Recognition &amp; achievements</h3>
+                        <ul class="rows">
+                            <li>
+                                <div class="icon-wrap"><i data-lucide="award"></i></div>
+                                <div>
+                                    <h3>Innovation Consortium Medal of Excellence</h3>
+                                    <p>Finalist</p>
+                                    <p class="when">2024 &amp; 2025</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-wrap"><i data-lucide="award"></i></div>
+                                <div>
+                                    <h3>Google Hackathon Participation Award</h3>
+                                    <p>For the design and development of the AI Nanny prototype.</p>
+                                    <p class="when">2024</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-wrap"><i data-lucide="award"></i></div>
+                                <div>
+                                    <h3>PLP Africa Certificate in Web Development</h3>
+                                    <p class="when">2023</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="experience" class="section-padding">
-            <div class="container">
-                <h2>Work Experience</h2>
-                <div class="experience-timeline">
-                    <div class="experience-item">
-                        <h3>Software Engineering Intern <span class="employer">NSSF Uganda</span></h3>
-                        <p class="duration">June 2025 – August 2025</p>
-                        <ul>
-                            <li>Developed a service helpdesk system in Laravel to replace an existing vendor platform, with multi-user views and integrated with the existing authentication system.</li>
-                            <li>Built a .NET (C#) backend to aggregate data from two legacy system APIs, delivering centralized analytics to a unified frontend.</li>
-                            <li>Collaborated with system administrators and internal IT teams to ensure seamless integration and deployment.</li>
-                        </ul>
-                    </div>
-                     <div class="experience-item">
-                        <h3>Full Stack Developer Intern <span class="employer">Crest AI</span></h3>
-                        <p class="duration">May 2025 – July 2025</p>
-                        <ul>
-                            <li>Contributed to mobile development using Flutter, focusing on JWT-based authentication and refined UI/UX design.</li>
-                            <li>Built FastAPI endpoints for multilingual and live speech translation modules.</li>
-                            <li>Developed an automatic speech recognition engine using Whisper and Sunbird AI models.</li>
-                            <li>Worked across multiple teams as a full stack developer, contributing to both front-end features and back-end services.</li>
-                        </ul>
-                    </div>
-                    <div class="experience-item">
-                        <h3>Web Application Developer (Contract) <span class="employer">Uganda Civil Aviation Authority | NAJOD Technologies</span></h3>
-                        <p class="duration">March 2025 – June 2025</p>
-                        <ul>
-                            <li>Developed a survey web application using Laravel, implementing modular controllers and services for maintainable code.</li>
-                            <li>Improved the design and usability of an existing system by refactoring Blade templates, introducing responsive layouts, and optimizing asset delivery.</li>
-                            <li>Incorporated multilingual support (English, Luganda, Kiswahili) via Laravel Localization.</li>
-                            <li>Wrote unit and integration tests (PHPUnit) to ensure reliability and reduce regressions.</li>
-                        </ul>
-                    </div>
-                    <div class="experience-item">
-                        <h3>Mobile Application Developer (Intern) <span class="employer">Developers Hub Corporation</span></h3>
-                        <p class="duration">February 2025 – April 2025</p>
-                        <ul>
-                            <li>Architected and maintained multiple Flutter apps, emphasizing modular, scalable code (Clean Architecture).</li>
-                            <li>Integrated Firebase for authentication, Firestore data syncing, Cloud Messaging (push notifications), and Analytics.</li>
-                            <li>Refactored legacy modules, reducing app size by 15% and improving load times by 25%.</li>
-                            <li>Coordinated with UI/UX designers on Figma hand-offs to ensure visual consistency and accessibility.</li>
-                        </ul>
-                    </div>
-                     <div class="experience-item">
-                        <h3>Mobile Application Developer (Contract) <span class="employer">Ndejje University FarmEase Initiative</span></h3>
-                        <p class="duration">February 2025 – March 2025</p>
-                        <ul>
-                            <li>Led development of FarmEase using Flutter & Firebase, featuring QR code scanning/generation for livestock tags and real-time updates to animal health and production records via Firestore.</li>
-                            <li>Built AI modules (Python back-end) to auto-generate farm operational reports, streamlining bookkeeping.</li>
-                            <li>Collaborated with IoT engineers to prototype sensor integrations (temperature, humidity) and capture environmental data.</li>
-                            <li>Managed RESTful API integrations for third-party services (payment gateways, SMS notifications).</li>
-                        </ul>
-                    </div>
-                    <div class="experience-item">
-                        <h3>Mobile Developer Intern <span class="employer">CodSoft</span></h3>
-                        <p class="duration">July 2024 – March 2025</p>
-                        <ul>
-                            <li>Developed a University Attendance demo app with real-time student check-ins via QR codes and an admin dashboard with attendance analytics.</li>
-                            <li>Built a Task Manager app focusing on intuitive UI components and state management with Provider, BLOC, and GetX for scalability.</li>
-                            <li>Conducted comprehensive testing (widget, integration) and debugging, improving app stability by 30%.</li>
-                        </ul>
-                    </div>
-                     <div class="experience-item">
-                        <h3>Mobile Application Developer (Part-Time) <span class="employer">Lattelink</span></h3>
-                        <p class="duration">October 2024 – January 2025</p>
-                        <ul>
-                            <li>Designed and built a social media platform in Flutter featuring real-time messaging (Firestore streams) and multimedia sharing with Cloud Storage integration.</li>
-                            <li>Architected robust RESTful APIs in Laravel to manage posts, comments, and user profiles.</li>
-                            <li>Integrated state management patterns (Provider, BLOC, GetX) to maintain clean, testable code.</li>
-                        </ul>
-                    </div>
-                    <div class="experience-item">
-                        <h3>App Designer - Google Challenge Team <span class="employer">AI Nanny</span></h3>
-                        <p class="duration">February 2024 – June 2024</p>
-                        <ul>
-                            <li>Conceptualized and designed an AI-driven nanny assistant prototype for Google Challenge 2024.</li>
-                            <li>Defined user journeys, created wireframes and interactive prototypes using Figma.</li>
-                            <li>Developed front-end in Flutter focusing on accessibility (screen-reader support, scalable text)</li>
-                            <li>Coordinated with ML specialists to integrate early-stage AI features (voice recognition, scheduling).</li>
-                        </ul>
-                    </div>
-                     <div class="experience-item">
-                        <h3>Marketing Director <span class="employer">HiLo Bakeries Namugongo</span></h3>
-                        <p class="duration">January 2023 – June 2023</p>
-                        <ul>
-                            <li>Directed all digital marketing efforts, achieving a 20% sales uplift.</li>
-                            <li>Designed and executed campaigns on Facebook, Instagram, and WhatsApp, driving brand awareness.</li>
-                            <li>Monitored campaign KPIs using Google Analytics; reallocated budget in real time to maximize ROI.</li>
-                        </ul>
-                    </div>
-                    <div class="experience-item">
-                        <h3>Freelance Developer & Passion Projects <span class="employer">Remote</span></h3>
-                        <p class="duration">February 2025 – Present</p>
-                        <ul>
-                            <li>Experimenting with FinTech features (mobile payments, wallet integrations) in Flutter prototypes.</li>
-                            <li>Building Laravel APIs for personal projects focusing on authentication, role-based access, and payment gateways.</li>
-                            <li>Integrating machine learning (TensorFlow Lite) into Flutter apps for on-device inference.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- ============ CONTACT ============ -->
+        <section class="section section--surface" id="contact">
+            <div class="wrap">
+                <div class="split split--top">
+                    <div>
+                        <p class="kicker">Contact</p>
+                        <h2 class="section-title">Let’s build something</h2>
+                        <span class="rule"></span>
+                        <p class="lead">Have a project in mind, a role to discuss, or a system that needs an extra pair of hands? Send a message and I’ll get back to you.</p>
 
-        <section id="projects" class="section-padding bg-light">
-            <div class="container">
-                <h2>Featured Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>FarmEase - Cow Management App</h3>
-                        <p class="project-description">Led development of FarmEase using Flutter & Firebase, featuring QR code scanning/generation to uniquely tag livestock, and real-time updates to animal health and production records via Firestore. Built AI modules (Python back-end) to auto-generate farm operational reports, streamlining bookkeeping. Collaborated with IoT engineers for sensor integrations.</p>
-                        <a href="https://github.com/kazibwefrancis/FarmEase" target="_blank" class="btn btn-primary">View Code <i class="fas fa-external-link-alt"></i></a>
+                        <ul class="contact-links">
+                            <li><a href="mailto:francis.b.kaz@gmail.com"><i data-lucide="mail"></i> francis.b.kaz@gmail.com</a></li>
+                            <li><a href="https://www.linkedin.com/in/francis-kazibwe-5b5269305" target="_blank" rel="noopener"><i data-lucide="linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://docs.google.com/document/d/1DyjTBAjesjCTgdHnv9h1YgTOVTm08ByO_21fxQ9N6HI/edit?tab=t.0#bookmark=id.ra11m7ew8zvq" target="_blank" rel="noopener"><i data-lucide="file-text"></i> Full CV</a></li>
+                        </ul>
                     </div>
-                    <div class="project-card">
-                        <h3>My AI Nanny - Google Challenge Prototype</h3>
-                        <p class="project-description">Conceptualized and designed an AI-driven nanny assistant prototype for Google Challenge 2024. Developed front-end in Flutter focusing on accessibility and coordinated with ML specialists to integrate early-stage AI features (voice recognition, scheduling).</p>
-                        <a href="https://github.com/kazibwefrancis/AINanny.git" target="_blank" class="btn btn-primary">View Code <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                    <div class="project-card">
-                        <h3>Totebags&More E-commerce Site</h3>
-                        <p class="project-description">A fully functional online store developed with Laravel, featuring secure payment gateway integrations, intuitive user interfaces, and robust product management. Implemented full CRUD operations and user authentication.</p>
-                        <a href="https://github.com/kazibwefrancis/Totebags.website" target="_blank" class="btn btn-primary">View Code <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                    <div class="project-card">
-                        <h3>Gemnet - User Management System</h3>
-                        <p class="project-description">A robust and secure User Management System built using plain PHP and MySQL. This system provides essential user authentication, role-based access control, and profile management functionalities with a focus on security best practices.</p>
-                        <a href="https://github.com/kazibwefrancis/Gemnet---Basic-User-Management-System" target="_blank" class="btn btn-primary">View Code <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                     <div class="project-card">
-                        <h3>University Attendance & Task Manager Apps</h3>
-                        <p class="project-description">Developed a Flutter-based University Attendance demo app with real-time student check-ins via QR codes and an admin dashboard. Also built a Task Manager app focusing on intuitive UI and scalable state management.</p>
-                        <a href="#" class="btn btn-primary disabled-link" onclick="return false;">Code Private <i class="fas fa-lock"></i></a>
-                    </div>
-                     <div class="project-card">
-                        <h3>Social Media Platform (Lattelink)</h3>
-                        <p class="project-description">Designed and built a social media platform in Flutter featuring real-time messaging (Firestore streams) and multimedia sharing. Architected robust Laravel APIs to manage posts, comments, and user profiles.</p>
-                        <a href="#" class="btn btn-primary disabled-link" onclick="return false;">Code Private <i class="fas fa-lock"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="education" class="section-padding">
-            <div class="container">
-                <h2>Education & Certifications</h2>
-                <div class="education-content">
-                    <div class="education-item">
-                        <h3>Bachelor of Software Engineering</h3>
-                        <p class="institution">Makerere University | Aug 2023 - Expected 2027</p>
-                    </div>
-                    <div class="education-item">
-                        <h3>Uganda Advanced Certificate of Education</h3>
-                        <p class="institution">VIVA College School, Jinja | Feb 2020 - Dec 2022</p>
-                    </div>
-                    <div class="education-item">
-                        <h3>Uganda Certificate of Education</h3>
-                        <p class="institution">VIVA College School, Jinja | Feb 2016 - Nov 2019</p>
-                    </div>
+                    <form class="form" action="https://formspree.io/f/xvgpnqjd" method="POST">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input class="input" type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input class="input" type="email" id="email" name="_replyto" required autocomplete="email" placeholder="you@example.com">
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea class="input" id="message" name="message" rows="6" required placeholder="How can I help?"></textarea>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Send message <i data-lucide="send"></i></button>
+                    </form>
                 </div>
-                <h3 class="centered-text">Achievements & Awards</h3>
-                <ul class="achievements-list centered-text">
-                    <li>Google Hackathon Participation Award (2024)</li>
-                    <li>Innovation Consortium's Medal of Excellence Award (2024)</li>
-                    <li>PLP Africa Certificate in Web Development (2023)</li>
-                </ul>
-                <a href="https://docs.google.com/document/d/1DyjTBAjesjCTgdHnv9h1YgTOVTm08ByO_21fxQ9N6HI/edit?tab=t.0#bookmark=id.ra11m7ew8zvq" target="_blank" class="btn btn-secondary centered-text">View My Full CV <i class="fas fa-file-alt"></i></a>
-            </div>
-        </section>
-
-        <section id="contact" class="section-padding bg-light">
-            <div class="container">
-                <h2>Get in Touch</h2>
-                <p>Have a project in mind, a question, or just want to say hi? Feel free to reach out!</p>
-                <form action="https://formspree.io/f/xvgpnqjd" method="POST" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Your Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="_replyto" required placeholder="your.email@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="6" required placeholder="Your message here..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
-                </form>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Kazibwe Francis. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://github.com/kazibwefrancis" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/francis-kazibwe-5b5269305" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin fa-2x"></i></a>
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div>
+                    <a class="brand" href="#top">
+                        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="8" y="8" width="84" height="84"/>
+                            <path d="M33 26v48M68 26 33 52l35 22"/>
+                        </svg>
+                        Kazibwe Francis
+                    </a>
+                    <p>Systems engineer building mobile, web and backend products end to end. Based in Kampala, Uganda.</p>
+                </div>
+                <div>
+                    <h4>Find me</h4>
+                    <ul>
+                        <li><a href="mailto:francis.b.kaz@gmail.com"><i data-lucide="mail"></i> francis.b.kaz@gmail.com</a></li>
+                        <li><a href="https://www.linkedin.com/in/francis-kazibwe-5b5269305" target="_blank" rel="noopener"><i data-lucide="linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
             </div>
+            <p class="footer-base">&copy; <span id="year">2026</span> Kazibwe Francis. All rights reserved.</p>
         </div>
     </footer>
-</body>
-</body>
-<script>
-// Hamburger menu toggle for mobile nav (wait for DOM)
-document.addEventListener('DOMContentLoaded', function() {
-  var navToggle = document.querySelector('.nav-toggle');
-  var navLinks = document.querySelector('.nav-links');
-  if (navToggle && navLinks) {
-    navToggle.addEventListener('click', function() {
-      navLinks.classList.toggle('nav-open');
-      navToggle.classList.toggle('open');
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        if (window.lucide) lucide.createIcons({ attrs: { 'stroke-width': 1.5 } });
+
+        var year = document.getElementById('year');
+        if (year) year.textContent = new Date().getFullYear();
+
+        var toggle = document.querySelector('.nav-toggle');
+        var links = document.getElementById('nav-links');
+        function setOpen(open) {
+            links.classList.toggle('is-open', open);
+            toggle.setAttribute('aria-expanded', String(open));
+        }
+        toggle.addEventListener('click', function () {
+            setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+        });
+        links.addEventListener('click', function (e) {
+            if (e.target.closest('a')) setOpen(false);
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') setOpen(false);
+        });
+
+        var navLinks = Array.prototype.slice.call(links.querySelectorAll('a'));
+        var map = {};
+        navLinks.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+        if ('IntersectionObserver' in window) {
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+                    navLinks.forEach(function (a) { a.removeAttribute('aria-current'); });
+                    var a = map[entry.target.id];
+                    if (a) a.setAttribute('aria-current', 'true');
+                });
+            }, { rootMargin: '-40% 0px -55% 0px' });
+            Object.keys(map).forEach(function (id) {
+                var el = document.getElementById(id);
+                if (el) io.observe(el);
+            });
+        }
     });
-  }
-});
-</script>
-</html>
+    </script>
+</body>
 </html>
